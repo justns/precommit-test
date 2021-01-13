@@ -26,3 +26,12 @@ chore：构建过程或辅助工具的变动
 
 subject
 subject是 commit 的简短描述，不能超过50个字符，且结尾不加英文句号。
+
+example：git commit -m 'docs: 补充readme文档说明git代码注释规范操作'
+
+## 包含全部的栗子
+example：git commit -m 'docs: 补充readme文档说明git代码注释规范操作
+
+这是注释body
+
+这是注释footer'
