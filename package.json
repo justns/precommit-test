@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "webpack"
+    "precommit": "webpack",
+    "cz": "git-cz"
   },
+  "pre-commit": [
+    "cz"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/justns/precommit-test.git"
@@ -18,6 +22,11 @@
   },
   "homepage": "https://github.com/justns/precommit-test#readme",
   "devDependencies": {
-    "husky": "^4.3.7"
+    "husky": "^4.3.7",
+    "pre-commit": "^1.2.2"
+  },
+  "dependencies": {
+    "commitizen": "^4.2.2",
+    "webpack": "^5.13.0"
   }
 }
