@@ -7,9 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cz": "git-cz"
   },
-  "pre-commit": [
-    "cz"
-  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo 'husky' && npm run cz"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/justns/precommit-test.git"
