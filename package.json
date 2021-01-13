@@ -1,0 +1,23 @@
+{
+  "name": "precommit-test",
+  "version": "1.0.0",
+  "description": "git提交代码注释规范测试",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justns/precommit-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justns/precommit-test/issues"
+  },
+  "homepage": "https://github.com/justns/precommit-test#readme",
+  "devDependencies": {
+    "husky": "^4.3.7"
+  }
+}
