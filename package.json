@@ -3,19 +3,10 @@
   "version": "1.0.0",
   "description": "git提交代码注释规范测试",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "cz": "git-cz",
-    "commit": "git-cz"
-  },
+  "scripts": {},
   "husky": {
     "hooks": {
-      "commit-msg": "npm run commit"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
+      "commit-msg": "commitlint -e $GIT_PARAMS"
     }
   },
   "dependencies": {
@@ -24,8 +15,6 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "commitizen": "^4.2.2",
-    "cz-conventional-changelog": "^3.3.0"
+    "@commitlint/config-conventional": "^11.0.0"
   }
 }
