@@ -5,26 +5,27 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cz": "git-cz"
+    "cz": "git-cz",
+    "commit": "git-cz"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo 'husky1' && npm run cz"
+      "commit-msg": "npm run commit"
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/justns/precommit-test.git"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/justns/precommit-test/issues"
-  },
-  "homepage": "https://github.com/justns/precommit-test#readme",
   "dependencies": {
-    "commitizen": "^4.2.2",
     "husky": "^4.3.7",
     "webpack": "^5.13.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "commitizen": "^4.2.2",
+    "cz-conventional-changelog": "^3.3.0"
   }
 }
