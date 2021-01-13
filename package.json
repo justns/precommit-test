@@ -9,7 +9,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo 'husky' && npm run cz"
+      "pre-commit": "echo 'husky1' && npm run cz"
     }
   },
   "repository": {
